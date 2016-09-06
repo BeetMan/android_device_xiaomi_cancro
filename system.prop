@@ -12,7 +12,6 @@ wifi.interface=wlan0
 persist.data.netmgrd.qos.enable=true
 persist.data.tcpackprio.enable=true
 ro.data.large_tcp_window_size=true
-persist.cne.feature=0
 
 ro.fm.transmitter=false
 
@@ -61,7 +60,6 @@ audio_hal.period_size=192
 
 ro.qualcomm.perf.cores_online=1
 dalvik.vm.dex2oat-swap=false
-ro.gps.agps_provider=1
 persist.debug.wfd.enable=1
 persist.demo.hdmirotationlock=false
 ro.hdmi.enable=true
