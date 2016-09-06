@@ -99,8 +99,8 @@ PRODUCT_PACKAGES += \
     NfcNci \
     Tag
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/releasetools/device_check.sh:install/bin/device_check.sh
+#PRODUCT_COPY_FILES += \
+#    $(LOCAL_PATH)/releasetools/device_check.sh:install/bin/device_check.sh
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.hce.xml:system/etc/permissions/android.hardware.nfc.hce.xml \
@@ -216,7 +216,7 @@ PRODUCT_PACKAGES += \
     libantradio
 
 # Baseband assertion
-PRODUCT_PACKAGES += librecovery_updater_cancro
+#PRODUCT_PACKAGES += librecovery_updater_cancro
 
 # Gello
 PRODUCT_PACKAGES += \
