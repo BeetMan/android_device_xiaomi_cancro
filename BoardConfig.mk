@@ -63,7 +63,7 @@ TARGET_LIBINIT_DEFINES_FILE := $(CANCRO_PATH)/init/init_cancro.cpp
 
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE            := true
-TARGET_POWERHAL_VARIANT             := qcom
+#TARGET_POWERHAL_VARIANT             := qcom
 TARGET_POWERHAL_SET_INTERACTIVE_EXT := $(CANCRO_PATH)/power/power_ext.c
 
 # Audio
@@ -160,6 +160,9 @@ TARGET_PROVIDES_LIBLIGHT := true
 # Use HW crypto for ODE
 #TARGET_HW_DISK_ENCRYPTION := false
 
+BOARD_GLOBAL_CFLAGS += -DUSE_RIL_VERSION_11 -DCOMPAT_SENSORS_M
+
+
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
@@ -174,6 +177,9 @@ BOARD_CHARGER_ENABLE_SUSPEND := true
 
 # Disable dex pre-optimization
 WITH_DEXPREOPT := false
+
+# Avoid CMSDK issues for now
+I_WANT_A_QUAIL_STAR := true
 
 # SELinux policies
 # qcom sepolicy
