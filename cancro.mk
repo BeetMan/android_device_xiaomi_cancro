@@ -72,7 +72,8 @@ PRODUCT_PACKAGES += \
     p2p_supplicant_overlay.conf \
     hostapd_default.conf \
     hostapd.accept \
-    hostapd.deny
+    hostapd.deny \
+    libtinyxml
 
 # KeyLayout
 PRODUCT_COPY_FILES += \
