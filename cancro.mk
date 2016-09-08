@@ -211,6 +211,10 @@ PRODUCT_PACKAGES += \
     libnl_2 \
     libbson
 
+# STK
+PRODUCT_PACKAGES += \
+    Stk
+
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService \
@@ -221,8 +225,8 @@ PRODUCT_PACKAGES += \
 #PRODUCT_PACKAGES += librecovery_updater_cancro
 
 # Gello
-PRODUCT_PACKAGES += \
-    Gello
+#PRODUCT_PACKAGES += \
+#    Gello
 
 
 # Permissions
